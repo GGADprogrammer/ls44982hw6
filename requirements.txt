@@ -2,6 +2,7 @@ argcomplete==1.12.3
 argon2-cffi==21.1.0
 flask==2.0.2
 flask-cors==2.1.0
+boto3==1.19.6
 attrs==21.2.0
 backcall==0.2.0
 bleach==4.1.0
