@@ -10,7 +10,10 @@ def Welcome():
     firstname = request.args.get('firstname')
     lastname='song'
     # return jsonify({'result': firstname+lastname})
-    return firstname+lastname
+    if firstname =='litong':
+        return firstname+lastname
+    else:
+        return 'User Not Found'
 @app.route('/')
 def serve():
     return send_from_directory(app.static_folder, 'index.html')
