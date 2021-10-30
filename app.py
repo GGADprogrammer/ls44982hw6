@@ -8,7 +8,9 @@ cors = CORS(app)
 @cross_origin()
 def Welcome():
     firstname = request.args.get('firstname')
-    return firstname
+    lastname='song'
+    # return jsonify({'result': firstname+lastname})
+    return firstname+lastname
 @app.route('/')
 def serve():
     return send_from_directory(app.static_folder, 'index.html')
