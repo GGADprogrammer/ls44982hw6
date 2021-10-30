@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT main-api:app –preload
+web: gunicorn --bind 0.0.0.0:$PORT app:app –preload
